@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  margin: 5% auto;
+  width: fit-content;
+}
+
+.carousel-visible {
+  max-width: 42.5rem;
+  overflow: hidden;
+  border: 1px solid red;
+}
+
+.carousel-items-wrapper {
+  display: flex;
+  transform: translateX(-100%);
+}
+
+.carousel-item {
+  width: 100%;
+  height: 80%;
+}

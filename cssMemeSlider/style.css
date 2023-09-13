@@ -81,3 +81,43 @@ input[type="radio"]:checked:hover {
 .wrapper:has(#img5:checked) .carousel-items-wrapper {
   transform: translateX(-400%);
 }
+
+@keyframes showLegend {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.carousel-item-caption {
+  display: none;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.wrapper:has(#img1:checked) .carousel-item-caption:nth-of-type(1) {
+  display: block;
+  animation: showLegend 0.3s;
+}
+
+.wrapper:has(#img2:checked) .carousel-item-caption:nth-of-type(2) {
+  display: block;
+  animation: showLegend 0.3s;
+}
+
+.wrapper:has(#img3:checked) .carousel-item-caption:nth-of-type(3) {
+  display: block;
+  animation: showLegend 0.3s;
+}
+
+.wrapper:has(#img4:checked) .carousel-item-caption:nth-of-type(4) {
+  display: block;
+  animation: showLegend 0.3s;
+}
+
+.wrapper:has(#img5:checked) .carousel-item-caption:nth-of-type(5) {
+  display: block;
+  animation: showLegend 0.3s;
+}

@@ -10,11 +10,11 @@
 .carousel-visible {
   max-width: 42.5rem;
   overflow: hidden;
-  border: 1px solid red;
 }
 
 .carousel-items-wrapper {
   display: flex;
+  transition: all 0.3s linear;
 }
 
 .carousel-item {
@@ -60,4 +60,24 @@ input[type="radio"]:checked {
 input[type="radio"]:checked:hover {
   background-color: #6dd5ed;
   cursor: pointer;
+}
+
+.wrapper:has(#img1:checked) .carousel-items-wrapper {
+  transform: translateX(0);
+}
+
+.wrapper:has(#img2:checked) .carousel-items-wrapper {
+  transform: translateX(-100%);
+}
+
+.wrapper:has(#img3:checked) .carousel-items-wrapper {
+  transform: translateX(-200%);
+}
+
+.wrapper:has(#img4:checked) .carousel-items-wrapper {
+  transform: translateX(-300%);
+}
+
+.wrapper:has(#img5:checked) .carousel-items-wrapper {
+  transform: translateX(-400%);
 }

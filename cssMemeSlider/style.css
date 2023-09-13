@@ -2,14 +2,26 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #ee9ca7;
+}
+
 .wrapper {
   margin: 5% auto;
   width: fit-content;
+  height: fit-content;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  background-color: #ffdde1;
+  border-radius: 3%;
 }
 
 .carousel-visible {
   max-width: 42.5rem;
   overflow: hidden;
+  border-radius: 3%;
 }
 
 .carousel-items-wrapper {
@@ -92,6 +104,7 @@ input[type="radio"]:checked:hover {
 }
 
 .carousel-item-caption {
+  margin: 0;
   display: none;
   font-family: sans-serif;
   font-weight: 600;
@@ -120,4 +133,21 @@ input[type="radio"]:checked:hover {
 .wrapper:has(#img5:checked) .carousel-item-caption:nth-of-type(5) {
   display: block;
   animation: showLegend 0.3s;
+}
+
+.wrapper-bottom {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 500px) {
+  .wrapper-bottom {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .carousel-pagination {
+    align-self: center;
+  }
 }

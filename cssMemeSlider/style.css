@@ -92,6 +92,10 @@ input[type="radio"]:active {
   border: 0.2em solid #FFFFFF;
 }
 
+input[type="radio"]:checked:active {
+  border: inherit;
+}
+
 .wrapper:has(#img1:checked) .carousel-items-wrapper {
   transform: translateX(0);
 }

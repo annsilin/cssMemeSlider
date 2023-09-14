@@ -65,6 +65,11 @@ input[type="radio"]:hover {
   cursor: pointer;
 }
 
+input[type="radio"]:active {
+  border: 0.2em solid #FFFFFF;
+  cursor: pointer;
+}
+
 input[type="radio"]:checked {
   background-color: #2193b0;
 }
